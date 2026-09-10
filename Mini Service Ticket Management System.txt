@@ -1,0 +1,116 @@
+Mini Service Ticket Management System
+Pramila Rajashree Madhava AIML
+•
+Yesterday (Edited Yesterday)
+100 points
+|
+Due Sep 14, 11:59 PM
+Deadline 14 Sep .
+Points:
+1. Speed of delivery
+2. Accuracy
+3. Documentation
+4. Code efficiencyProblem Statement: Mini Service Ticket Management System
+Scenario
+A company receives service/support requests from its customers. Build a small web application that allows staff to create, view, update, and manage these service tickets.
+
+
+Requirements
+1. React Frontend
+Create a dashboard where users can:
+View all service tickets.
+Create a new ticket.
+Filter tickets by:
+Status
+Priority
+Customer
+Search tickets by title/customer name.
+Open a ticket to view its details.
+Change the ticket status:
+Open
+In Progress
+Resolved
+Closed
+Each ticket should display:
+Ticket ID
+Customer name
+Title
+Description
+Priority (Low, Medium, High)
+Status
+Created date
+Last updated date
+
+
+
+2. Node.js Backend
+Create a REST API using Node.js/Express.
+Suggested endpoints:
+GET    /api/tickets
+GET    /api/tickets/:id
+POST   /api/tickets
+PUT    /api/tickets/:id
+DELETE /api/tickets/:id
+The API should:
+Validate incoming data.
+Return appropriate HTTP status codes.
+Handle invalid ticket IDs.
+Handle missing/invalid fields.
+Support filtering/searching.
+
+
+
+3. Database
+Use any database they're comfortable with:
+SQLite
+MySQL
+PostgreSQL
+MongoDB
+
+
+A ticket could have a structure similar to:
+Ticket
+------
+id
+customerName
+title
+description
+priority
+status
+createdAt
+updatedAt
+
+Bonus Requirements
+These are not mandatory, but can help distinguish stronger candidates:
+Pagination.
+Sorting by creation date or priority.
+Add comments to a ticket.
+Basic authentication.
+Responsive design.
+Loading/error states.
+Optimistic UI updates.
+Unit/API tests.
+Docker setup.
+Proper database migrations.
+TypeScript instead of JavaScript.
+What I'd evaluate
+Area
+What you're looking for
+React
+Components, hooks, state management
+Node.js
+Clean REST API design
+Database
+Correct CRUD operations and relationships
+Validation
+Doesn't blindly trust frontend input
+Error handling
+Meaningful errors + correct HTTP codes
+UI
+Usable, reasonably clean interface
+Code quality
+Organization, naming, maintainability
+Problem solving
+How they handle edge cases
+Git
+Sensible commits/readable README
